@@ -1,11 +1,14 @@
-import pickle
+import joblib
 import streamlit as st
 
 
-# loading the trained model
-pickle_in = open('classifier.pkl', 'rb') 
-classifier = pickle.load(pickle_in)
-  
+
+
+# Load the trained model
+classifier = joblib.load("classifier.joblib")
+
+print("Model loaded successfully using joblib.")
+
 @st.cache_data()
 
 # defining the function which will make the prediction using the data which the user inputs 
