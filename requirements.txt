@@ -1,9 +1,2 @@
 streamlit
-numpy
-pandas
-scikit-learn
-seaborn
-matplotlib
-plotly
-joblib
 pickle
